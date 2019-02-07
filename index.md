@@ -178,6 +178,7 @@ $ sudo dnf install smplayer -y
 
 ### Config Smplayer
 With `--hwdec=nvdec --vo=gpu`
+
 ![alt text](smplayer-preferences.png "SMPlayer Preferences")
 
 ## Install Makemkv
