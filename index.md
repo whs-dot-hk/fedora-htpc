@@ -153,7 +153,10 @@ $ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 ## Install Cuda
 ```
+$ cd ~/Downloads
+$ wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-fedora27-10-0-local-10.0.130-410.48-1.0-1.x86_64-O cuda-repo-fedora27-10-0-local-10.0.130-410.48-1.0-1.x86_64.rpm
 $ sudo dnf install http://developer.download.nvidia.com/compute/cuda/repos/fedora27/x86_64/cuda-repo-fedora27-9.2.148-1.x86_64.rpm -y
+$ sudo dnf install cuda-repo-fedora27-10-0-local-10.0.130-410.48-1.0-1.x86_64.rpm -y
 $ sudo dnf install cuda -y
 ```
 
@@ -174,11 +177,12 @@ $ sudo dnf install smplayer -y
 ```
 
 ### Config Smplayer
+With `--hwdec=nvdec --vo=gpu`
 ![alt text](smplayer-preferences.png "SMPlayer Preferences")
 
 ## Install Makemkv
 ```
-$ sudo dnf install openssl-devel expat-devel qt5-devel -y
+$ sudo dnf install openssl-devel expat-devel qt5-devel ffmpeg-devel -y
 $ cd ~/Downloads
 $ wget http://www.makemkv.com/download/makemkv-bin-1.14.2.tar.gz
 $ wget http://www.makemkv.com/download/makemkv-oss-1.14.2.tar.gz
